@@ -8,7 +8,7 @@
   <meta name="description" content="把握当下，相信未来">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Jocker">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://jockerxlj.tk/index.html">
 <meta property="og:site_name" content="Jocker">
 <meta property="og:description" content="把握当下，相信未来">
 <meta name="twitter:card" content="summary">
@@ -142,7 +142,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/算法/" style="font-size: 10px;">算法</a>
+                        <a href="/tags/notes/" style="font-size: 10px;">notes</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a>
                     </div>
                 </section>
                 
@@ -220,6 +220,80 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-说说代理" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/02/说说代理/" class="article-date">
+      <time datetime="2016-03-02T07:43:13.000Z" itemprop="datePublished">2016-03-02</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/02/说说代理/">说说代理</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="正向代理"><a href="#正向代理" class="headerlink" title="正向代理"></a>正向代理</h2><p>正向代理是在客户A和服务器B之间加多个代理服务器Z，用户A通过代理服务器Z来请求访问服务器B，客户端必须要进行一些特别的设置才能使用正向代理。如图：<br><img src="http://img1.51cto.com/attachment/201210/105641260.jpg" alt=""></p>
+<h5 id="正向代理的作用"><a href="#正向代理的作用" class="headerlink" title="正向代理的作用"></a>正向代理的作用</h5><ol>
+<li>访问本无法访问的服务器B<br> 假设路由器坏了。。。<br> <img src="http://img1.51cto.com/attachment/201210/105737336.jpg" alt=""></li>
+<li>加速访问服务器B</li>
+<li>Cache作用</li>
+<li>客户端访问授权</li>
+<li>隐藏访问者的行踪</li>
+</ol>
+<h2 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h2><p>对于客户端而言，代理服务器就像是真的原始服务器，而且客户端不需要进行任何特别的设置。客户端向反向代理的命名空间(name-space)中的内容发送普通请求，接着反向代理将判断向何处(原始服务器)转交请求，并将获得的内容返回给客户端</p>
+<h5 id="反向代理的作用"><a href="#反向代理的作用" class="headerlink" title="反向代理的作用"></a>反向代理的作用</h5><ol>
+<li>保护和隐藏原始资源服务器</li>
+<li>负载均衡</li>
+</ol>
+<h2 id="透明代理"><a href="#透明代理" class="headerlink" title="透明代理"></a>透明代理</h2><p>客户端根本不需要知道有代理服务器的存在,透明代理设备会根据自身的策略拦截并修改用户的请求的报文，并作为实际的请求方向服务器发送请求。<br><img src="http://img1.51cto.com/attachment/201210/110500391.jpg" alt=""></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/时间/">时间</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/notes/">notes</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-说说winnowing算法" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -247,14 +321,21 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>##算法简介<br>电子作业防抄袭算法必须满足：</p>
+        <h2 id="算法简介"><a href="#算法简介" class="headerlink" title="算法简介"></a>算法简介</h2><p>电子作业防抄袭算法必须满足：</p>
 <ol>
 <li>不被空格、换行符、字母大小写、标点符号等影响</li>
-<li>不被文档中某些字符串的简单调换下顺序影响（position independence）<br><em>k-grams</em>是一种常见的指纹算法，它将一个文档的字符串分割成长度为K的字符串集合（k-grams），相邻的小字符串之间只差一个字符（错位），然后分别计算这些字符串的各个<em>hash</em>值，然后从hash值中选取一段作为文档的指纹<em>fingerprint</em>。<br>###举个栗子<blockquote>
-<p>A do run run run, a do run run<br>###过滤<br>adorunrunrunadorunrun<br>###进行5-grams<br>adoru dorun orunr runru<br>unrun nrunr runru unrun<br>nruna runad unado nador<br>adoru dorun orunr runru<br>unrun<br>###通过一种hash算法分别计算hash值<br>77 72 42 17 98 50 17 98 8 88 67 39 77 72 42 17 9</p>
+<li>不被文档中某些字符串的简单调换下顺序影响（position independence）<br><em>k-grams</em>是一种常见的指纹算法，它将一个文档的字符串分割成长度为K的字符串集合（k-grams），相邻的小字符串之间只差一个字符（错位），然后分别计算这些字符串的各个<em>hash</em>值，然后从hash值中选取一段作为文档的指纹<em>fingerprint</em>。<h3 id="举个栗子"><a href="#举个栗子" class="headerlink" title="举个栗子"></a>举个栗子</h3><blockquote>
+<p>A do run run run, a do run run</p>
+<h3 id="过滤"><a href="#过滤" class="headerlink" title="过滤"></a>过滤</h3><p>adorunrunrunadorunrun</p>
 </blockquote>
 </li>
 </ol>
+<h3 id="进行5-grams"><a href="#进行5-grams" class="headerlink" title="进行5-grams"></a>进行5-grams</h3><blockquote>
+<p>adoru dorun orunr runru<br>unrun nrunr runru unrun<br>nruna runad unado nador<br>adoru dorun orunr runru<br>unrun</p>
+</blockquote>
+<h3 id="通过一种hash算法分别计算hash值"><a href="#通过一种hash算法分别计算hash值" class="headerlink" title="通过一种hash算法分别计算hash值"></a>通过一种hash算法分别计算hash值</h3><blockquote>
+<p>77 72 42 17 98 50 17 98 8 88 67 39 77 72 42 17 9</p>
+</blockquote>
 <p>接下来最重要的就是sample选取的问题了</p>
 <ol>
 <li>选取所有hash值，计算量(n-k+1)*n</li>
